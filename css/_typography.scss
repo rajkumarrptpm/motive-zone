@@ -1,0 +1,13 @@
+h1{
+    @include respond-above(sm){
+        font-size: 40px;
+        font-weight: bold;
+        
+    }
+    @include respond-above(xl){
+        
+        font-size: 50px;
+        font-weight: bold;
+        
+    }
+}

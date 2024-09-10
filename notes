@@ -1,0 +1,38 @@
+css framework
+uikit
+bootstrap
+foundation
+bulma
+tailwind css
+
+
+download font-helvetic neue
+select font and convert it in online compiler ('transfonter')
+
+
+--respond above(min width)
+@media (min-width:767px){
+    --css
+}
+@include respond-above(sm){ --sm->640px
+    --only will apply above 640px
+}
+
+
+
+--respond below(max width)
+@media (max-width : 767px){
+    --css
+}
+@include respond-below(sm){ 
+    --only will apply when the device size is below 767
+}
+
+
+--respond between(max-width,max-width)
+@media (min-width : 767px) and (max-widt:900px){
+    --css
+}
+@include respond-between(sm,md){ 
+    --only will apply when the device size is between 640px and 960px
+}

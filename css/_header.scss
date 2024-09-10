@@ -1,0 +1,59 @@
+
+header{
+    background-color: rgb(31, 31, 31);
+    .uk-flex{
+        @include respond-above(sm){
+            height: 60px;
+            
+        }
+        @include respond-above(xl){
+            height: 150px;
+        }
+        @include respond-below(sm){
+            height: 50px;
+        }
+    }
+    
+    .logo{
+        transform: translateY(-25px);
+        @include respond-above(sm){
+            max-width : 100px;
+            
+        }
+        @include respond-above(xl){
+            max-width : 259px;
+        }
+        @include respond-below(sm){
+            max-width: 70px;
+            transform: translateY(-25px);
+        }  
+
+        
+        .img{
+            width : 100%;
+        }
+    }
+    .navbar{
+        ul{
+            @include respond-above(sm){
+                display: flex;
+            }
+            li{
+                margin: 0 20px;
+                a{
+                    @include respond-above(xl){
+                        font-size: 15px;
+                        color: white;
+                    }
+                    @include respond-above(sm){
+                        font-size: 13px;
+                        color: white;
+                    }
+                    
+                }
+            }
+        }
+    }
+    
+    
+}
