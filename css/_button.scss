@@ -1,18 +1,19 @@
 .primary-btn{
     transition: color ease 0.3s;
-    @include respond-above(sm){
-        font-size: 13px;
-        color: white;
-        background: $secondary-color;
+    font-size: 13px;
+    color: white;
+    background: $secondary-color;
+    padding: 12px 25px;
+    border-radius: 5px;
+    @include respond-above(xl){
         padding: 5px 10px;
-        border-radius: 5px;
-
     }
-    @include respond-above(sm){
-        font-size: 13px;
+
+    @include respond-above(xl){
+        font-size: 15px;
     }
     
     &:hover{ // same as primary-btn:hover, in scss & is using
-        color: $primary-color;
+        color: $primary-color !important;
     }
 }

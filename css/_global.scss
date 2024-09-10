@@ -2,13 +2,19 @@ html{
     font-family: $primary-font;
     font-weight: $font-normal;
     font-size: 14px;
-    line-height: 25px;
-
-    
+    line-height: 25px; 
 }
 ul{
     @include reset-list()
 }
 a,a:hover{
     text-decoration: none;
+}
+.uk-flex{
+    flex-direction: column;
+
+    @include respond-above(sm){
+        flex-direction: row;
+    }
+    
 }

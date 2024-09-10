@@ -19,16 +19,19 @@
   font-style: normal;
   font-display: swap;
 }
+h1 {
+  font-weight: bold;
+}
 @media (min-width: 640px) {
   h1 {
-    font-size: 40px;
-    font-weight: bold;
+    font-size: 35px;
+    line-height: 50px;
   }
 }
 @media (min-width: 1600px) {
   h1 {
+    line-height: 70px;
     font-size: 50px;
-    font-weight: bold;
   }
 }
 
@@ -49,43 +52,51 @@ a, a:hover {
   text-decoration: none;
 }
 
-.primary-btn {
-  transition: color ease 0.3s;
+.uk-flex {
+  flex-direction: column;
 }
 @media (min-width: 640px) {
-  .primary-btn {
-    font-size: 13px;
-    color: white;
-    background: #FF9C00;
-    padding: 5px 10px;
-    border-radius: 5px;
+  .uk-flex {
+    flex-direction: row;
   }
 }
-@media (min-width: 640px) {
+
+.primary-btn {
+  transition: color ease 0.3s;
+  font-size: 13px;
+  color: white;
+  background: #FF9C00;
+  padding: 12px 25px;
+  border-radius: 5px;
+}
+@media (min-width: 1600px) {
   .primary-btn {
-    font-size: 13px;
+    padding: 5px 10px;
+  }
+}
+@media (min-width: 1600px) {
+  .primary-btn {
+    font-size: 15px;
   }
 }
 .primary-btn:hover {
-  color: #072753;
+  color: #072753 !important;
 }
 
 header {
-  background-color: rgb(31, 31, 31);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 @media (min-width: 640px) {
   header .uk-flex {
-    height: 60px;
+    height: 70px;
   }
 }
 @media (min-width: 1600px) {
   header .uk-flex {
-    height: 150px;
-  }
-}
-@media (max-width: 639px) {
-  header .uk-flex {
-    height: 50px;
+    height: 148px;
   }
 }
 header .logo {
@@ -118,6 +129,12 @@ header .logo .img {
 header .navbar ul li {
   margin: 0 20px;
 }
+header .navbar ul li:hover a {
+  color: #FF9C00;
+}
+header .navbar ul li a {
+  transition: color ease 0.3s;
+}
 @media (min-width: 1600px) {
   header .navbar ul li a {
     font-size: 15px;
@@ -132,19 +149,50 @@ header .navbar ul li {
 }
 
 .hero {
-  background-color: #072753;
+  background: linear-gradient(to bottom, rgb(26, 71, 137) 39%, rgb(109, 187, 217) 100%);
   height: 90vh;
+  display: flex;
+  align-items: center;
+}
+.hero .hero-inner {
+  position: relative;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 200px;
+  height: 200px;
+  background-image: url(../img/hero/hero-logo.svg);
+  background-repeat: no-repeat;
+  z-index: 11;
+}
+.hero .hero-text-area {
+  padding: 40px 50px;
 }
 @media (min-width: 640px) {
   .hero .hero-text-area {
     max-width: 400px;
+    margin-right: 100px;
   }
 }
 @media (min-width: 1600px) {
   .hero .hero-text-area {
     max-width: 700px;
+    margin-right: 144px;
   }
 }
-.hero .hero-text-area h1, .hero .hero-text-area p {
+.hero .hero-text-area * {
   color: white;
+}
+@media (min-width: 640px) {
+  .hero .hero-img-area img {
+    max-width: 400px;
+  }
+}
+@media (min-width: 1600px) {
+  .hero .hero-img-area img {
+    max-width: 615px;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -1,16 +1,16 @@
 
 header{
-    background-color: rgb(31, 31, 31);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
     .uk-flex{
         @include respond-above(sm){
-            height: 60px;
+            height: 70px;
             
         }
         @include respond-above(xl){
-            height: 150px;
-        }
-        @include respond-below(sm){
-            height: 50px;
+            height: 148px;
         }
     }
     
@@ -40,7 +40,14 @@ header{
             }
             li{
                 margin: 0 20px;
+
+                &:hover{
+                    a{
+                        color:$secondary-color;
+                    }
+                }
                 a{
+                    transition: color ease 0.3s;
                     @include respond-above(xl){
                         font-size: 15px;
                         color: white;
