@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="33.918" height="33.918" viewBox="0 0 33.918 33.918">
+  <g id="ux-design" transform="translate(0.5 0.5)">
+    <g id="Group_51" data-name="Group 51">
+      <g id="Group_50" data-name="Group 50">
+        <path id="Path_17" data-name="Path 17" d="M30.025,0H2.893A2.9,2.9,0,0,0,0,2.893V30.025a2.9,2.9,0,0,0,2.893,2.893H30.025a2.9,2.9,0,0,0,2.893-2.893V2.893A2.9,2.9,0,0,0,30.025,0ZM1.929,2.893a.965.965,0,0,1,.964-.964H7.779V7.715H1.929Zm29.06,27.132a.965.965,0,0,1-.964.964H2.893a.965.965,0,0,1-.964-.964V9.644h29.06Zm0-22.31H9.708V1.929H30.025a.965.965,0,0,1,.964.964Z" fill="#ff9c00" stroke="#ff9c00" stroke-width="1"/>
+      </g>
+    </g>
+    <g id="Group_53" data-name="Group 53" transform="translate(25.139 3.858)">
+      <g id="Group_52" data-name="Group 52">
+        <path id="Path_18" data-name="Path 18" d="M393.957,60h-1.993a.964.964,0,1,0,0,1.929h1.993a.964.964,0,0,0,0-1.929Z" transform="translate(-391 -60)" fill="#ff9c00" stroke="#ff9c00" stroke-width="1"/>
+      </g>
+    </g>
+    <g id="Group_55" data-name="Group 55" transform="translate(19.352 3.858)">
+      <g id="Group_54" data-name="Group 54">
+        <path id="Path_19" data-name="Path 19" d="M303.893,60h-1.929a.964.964,0,0,0,0,1.929h1.929a.964.964,0,0,0,0-1.929Z" transform="translate(-301 -60)" fill="#ff9c00" stroke="#ff9c00" stroke-width="1"/>
+      </g>
+    </g>
+    <g id="Group_57" data-name="Group 57" transform="translate(13.566 3.858)">
+      <g id="Group_56" data-name="Group 56">
+        <path id="Path_20" data-name="Path 20" d="M213.893,60h-1.929a.964.964,0,0,0,0,1.929h1.929a.964.964,0,0,0,0-1.929Z" transform="translate(-211 -60)" fill="#ff9c00" stroke="#ff9c00" stroke-width="1"/>
+      </g>
+    </g>
+    <g id="Group_59" data-name="Group 59" transform="translate(5.851 11.637)">
+      <g id="Group_58" data-name="Group 58">
+        <path id="Path_21" data-name="Path 21" d="M110.288,192.8v-1.195a2.9,2.9,0,0,0-2.893-2.893h-4.822V186.62a2.893,2.893,0,1,0-1.929,0v2.095H95.822a2.9,2.9,0,0,0-2.893,2.893V192.8a2.893,2.893,0,1,0,1.929,0v-1.195a.965.965,0,0,1,.964-.964h4.822V192.8a2.893,2.893,0,1,0,1.929,0v-2.159h4.822a.965.965,0,0,1,.964.964V192.8a2.893,2.893,0,1,0,1.929,0Zm-16.395,3.692a.964.964,0,1,1,.964-.964A.965.965,0,0,1,93.893,196.495Zm7.715,0a.964.964,0,1,1,.964-.964A.965.965,0,0,1,101.608,196.495Zm0-11.637a.964.964,0,1,1,.964-.964A.965.965,0,0,1,101.608,184.858Zm7.715,11.637a.964.964,0,1,1,.964-.964A.965.965,0,0,1,109.323,196.495Z" transform="translate(-91 -181)" fill="#ff9c00" stroke="#ff9c00" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

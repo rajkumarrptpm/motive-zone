@@ -1,0 +1,29 @@
+html{
+    font-family: $primary-font;
+    font-weight: $font-normal;
+    font-size: 14px;
+    line-height: 25px; 
+}
+ul{
+    @include reset-list()
+}
+a,a:hover{
+    text-decoration: none;
+}
+.uk-flex{
+    flex-direction: column;
+
+    @include respond-above(sm){
+        flex-direction: row;
+    }
+    
+}
+// Section Title
+.section-title{
+    max-width: 650px;
+    margin: 0 auto 50px;
+    @include respond-above(xl){
+        max-width: 700px;
+        margin: 0 auto 60px;
+    }
+}

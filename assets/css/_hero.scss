@@ -1,0 +1,80 @@
+body{
+    overflow-x: hidden;
+}
+.hero{
+    background: linear-gradient(to bottom, rgba(26,71,137,1) 39%,rgba(109,187,217,1) 100%);
+    height: 90vh;
+    
+    
+    &:after{
+        content:'';
+        width:102%;
+        height: 100px;
+        background-color: white;
+        position: absolute;
+        bottom: 0;
+        left: -3px;
+        right:0;
+        transform: rotateZ(357deg) translate(-5px,10px);
+        z-index: 11;
+        transform-origin: left center;
+    }
+
+    .hero-inner{
+        position: relative;
+        height: inherit;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        &:after{
+            content:'';
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.2;
+            background-image: url(../img/hero/hero-logo.svg),
+                                url(../img/hero/hero-logo.svg),
+                                url(../img/hero/hero-logo.svg);
+            background-position: right -45px ,
+                                    50px 90%,
+                                    55% 83%;
+            background-size: 135px, 80px, 130px;
+            background-repeat: no-repeat;
+            z-index: 0;
+            @include respond-above(xl){
+                background-size: 195px, 110px, 195px;
+            }
+        }
+    }
+    .hero-text-area{
+        padding: 40px 50px;
+        position: relative;
+        z-index: 1;
+        @include respond-above(sm){
+            max-width: 400px;
+            margin-right: 100px;
+        }
+        @include respond-above(xl){
+            max-width: 700px;
+            margin-right: 144px;
+        }
+        *{
+            color : white;
+        }
+    }
+    .hero-img-area{
+        img{
+            @include respond-above(sm){
+                max-width: 400px;
+                
+            }
+            @include respond-above(xl){
+                max-width: 615px;
+                
+            }
+        }
+        
+    }
+}
