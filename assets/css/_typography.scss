@@ -13,7 +13,14 @@ h1{
 h2, .title{
     font-weight: $font-bold;
     color: $primary-color;
-    font-size: 40px;   
+    font-size: 32px;
+    @include respond-above(xl){
+        font-size: 40px;
+    }   
+}
+h3{
+    font-size: 20px;
+    color: $primary-color;
 }
 
 p{

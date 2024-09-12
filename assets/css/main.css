@@ -38,7 +38,17 @@ h1 {
 h2, .title {
   font-weight: bold;
   color: #072753;
-  font-size: 40px;
+  font-size: 32px;
+}
+@media (min-width: 1600px) {
+  h2, .title {
+    font-size: 40px;
+  }
+}
+
+h3 {
+  font-size: 20px;
+  color: #072753;
 }
 
 p {
@@ -86,6 +96,7 @@ a, a:hover {
   transition: color ease 0.3s;
   font-size: 13px;
   color: white;
+  display: inline-block;
   background: #FF9C00;
   padding: 12px 25px;
   border-radius: 5px;
@@ -102,6 +113,38 @@ a, a:hover {
 }
 .primary-btn:hover {
   color: #072753 !important;
+}
+
+.secondary-btn {
+  font-size: 14px;
+  color: #1B498A;
+  text-transform: capitalize;
+  position: relative;
+  transition: color ease 0.3s;
+}
+@media (min-width: 1600px) {
+  .secondary-btn {
+    font-size: 15px;
+  }
+}
+.secondary-btn:after {
+  content: "";
+  background: url(../img/icons/Right-arrow.svg) no-repeat center;
+  position: absolute;
+  right: 0;
+  width: 12px;
+  height: 7px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  transform: translateX(20px);
+  transition: transform ease 0.3s;
+}
+.secondary-btn:hover {
+  color: #FF9C00;
+}
+.secondary-btn:hover:after {
+  transform: translateX(25px);
 }
 
 header {
@@ -181,8 +224,9 @@ body {
 .hero:after {
   content: "";
   width: 102%;
-  height: 100px;
+  height: 80px;
   background-color: white;
+  height: 80px;
   position: absolute;
   bottom: 0;
   left: -3px;
@@ -190,6 +234,11 @@ body {
   transform: rotateZ(357deg) translate(-5px, 10px);
   z-index: 11;
   transform-origin: left center;
+}
+@media (max-width: 639px) {
+  .hero:after {
+    bottom: 27px;
+  }
 }
 .hero .hero-inner {
   position: relative;
@@ -222,12 +271,6 @@ body {
   position: relative;
   z-index: 1;
 }
-@media (min-width: 640px) {
-  .hero .hero-text-area {
-    max-width: 400px;
-    margin-right: 100px;
-  }
-}
 @media (min-width: 1600px) {
   .hero .hero-text-area {
     max-width: 700px;
@@ -249,11 +292,16 @@ body {
 }
 
 .icon-info-section {
-  margin-top: 80px;
+  margin: 60px 0;
+}
+@media (min-width: 640px) {
+  .icon-info-section {
+    margin: 80px 0;
+  }
 }
 @media (min-width: 1600px) {
   .icon-info-section {
-    margin: 100px;
+    margin: 100px 0;
   }
 }
 .icon-info-section .icon-info-column .icon {
@@ -264,11 +312,46 @@ body {
   align-items: center;
   justify-content: center;
   background-color: rgba(255, 156, 0, 0.05);
+  margin-bottom: 18px;
 }
 @media (min-width: 1600px) {
   .icon-info-section .icon-info-column .icon {
     width: 85px;
     height: 85px;
     border-radius: 50%;
+  }
+}
+.icon-info-section .icon-info-column .info {
+  margin-top: 18px;
+  max-width: 300px;
+}
+@media (min-width: 1600px) {
+  .icon-info-section .icon-info-column .info {
+    max-width: 332px;
+  }
+}
+
+.image-info-section {
+  margin: 120px 0;
+}
+@media (min-width: 640px) {
+  .image-info-section {
+    margin: 60px 0;
+  }
+}
+.image-info-section .info {
+  max-width: 475px;
+}
+@media (min-width: 1600px) {
+  .image-info-section .info {
+    max-width: 552;
+  }
+}
+.image-info-section .info .primary-btn {
+  margin-top: 30px;
+}
+@media (min-width: 1600px) {
+  .image-info-section .info .primary-btn {
+    margin-top: 45px;
   }
 }/*# sourceMappingURL=main.css.map */

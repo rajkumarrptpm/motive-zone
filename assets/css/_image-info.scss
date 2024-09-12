@@ -1,0 +1,20 @@
+.image-info-section{
+    margin : 120px 0;
+    @include respond-above(sm){
+        margin: 60px 0;
+    }
+    .info{
+        max-width: 475px;
+        @include respond-above(xl){
+            max-width: 552;
+        }
+        .primary-btn{
+            margin-top: 30px;
+            @include respond-above(xl){
+                margin-top: 45px;
+            }
+        }
+        
+    }
+    
+}
